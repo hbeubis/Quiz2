@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>default heading</head>
+    <style>
+        div p { 
+                color: violet;
+        }
+        div > p1 {
+              color: red;
+            
+        }
+        div + p2 {
+            color: blue;
+        }
+        
+        div ~ ul {
+            color: orange;
+        }
+        em.phrase {
+            color: pink;
+        }
+    
+    </style>
+    <p>
+        <ol><div>
+            <li><p>first part of the list</p></li>
+            <li><p>second part of the list</p></li>
+            </div>
+        </ol>
+    <div><p1>red text using a child selector</p1></div> 
+    
+
+    <p2> blue text using an adjacent selector</p2>
+
+
+   
+        <ul>
+            
+        <li>orange text using a sibling selector; <em class="phrase">pink text by combining 2 selectors</em></li></ul>
